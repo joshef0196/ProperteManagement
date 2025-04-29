@@ -29,8 +29,18 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+UNFOLD = {
+    "SITE_TITLE": "My Admin",
+    "SITE_HEADER": "My E-Commerce Admin",
+    "SHOW_COUNTS": True,
+    "COLLAPSIBLE_APPS": True,
+    "DASHBOARD": {
+        "enabled": True,
+    },
+}
 
 INSTALLED_APPS = [
+    "unfold",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
